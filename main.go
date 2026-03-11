@@ -306,6 +306,7 @@ func licenseHeader(path string, tmpl *template.Template, data licenseData) ([]by
 		lic, err = executeTemplate(tmpl, data, "/**", " * ", " */")
 	case
 		".cc", ".cpp", ".hh", ".hpp",
+		".cu", ".cuh", ".cuhxx",
 		".cs",
 		".dart",
 		".go",
